@@ -1,0 +1,17 @@
+from math import sqrt
+# Write your solution here
+
+# This a program that asks the user for integer numbers and prints out the sqaure root of the user generated number, checks wether the number is below or above zero and contuines to ask for numbers until the user inputs zero
+
+
+# while loop to repeate code untill user enters zero
+
+while True:
+    number = int(input('Please type in a number: '))
+    if not number:
+        print('Exiting...')
+        break
+    if number < 0:
+        print('Invalid number')
+    if number > 0:
+        print(sqrt(number))
