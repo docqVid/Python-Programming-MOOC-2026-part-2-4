@@ -1,0 +1,13 @@
+# Write your solution here
+
+# This a program that prints out the message "hi" and asks shall we continue until the user inputs no and then prints out okay then and finsishes
+
+# while loop to repeat code untill user says to stop
+
+while True:
+    print('hi')
+    yes_no = input('Shall we continue?')
+    if yes_no == 'no':
+        break
+
+print('okay then')
