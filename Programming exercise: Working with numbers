@@ -1,0 +1,31 @@
+# Write your solution here
+
+print('Please type in integer numbers. Type in 0 to finish.')
+
+number_amount = 0
+sum_numbers = 0
+Pos_amount = 0
+neg_amount = 0
+
+while True:
+    number = int(input(''))
+
+    if number == 0:
+        break
+    if number < 0:
+        neg_amount += 1
+    else:
+        Pos_amount += 1
+    sum_numbers += number
+    number_amount += 1
+
+mean_numbers = sum_numbers/ number_amount
+        
+
+
+print('... the program asks for numbers')
+print('Numbers typed in', number_amount)
+print('The sum of the numbers is', sum_numbers)
+print('The mean of the numbers is', mean_numbers)
+print('Positive numbers', Pos_amount)
+print('Negative numbers', neg_amount)
