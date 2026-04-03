@@ -1,0 +1,25 @@
+# Write your solution here
+
+# This a prgogram whick kepps asking the user for a pin code untill they type in the correct one. The program will also print out the number of times the user tied diffrent codes
+
+# helper variable for number of pin attempts
+
+attempts = 0
+
+# while loop to confrim pin
+
+while True:
+# ask for pin
+    pin = int(input('PIN: '))
+# Track login attempts
+    attempts += 1
+# confirm if pin is correct and print out how many attmetps and if correct
+    if pin == 4321:
+        if attempts == 1:
+            print('Correct! It only took you one single attempt!')
+        else:
+            print(f'Correct! It took you {attempts} attempts')
+# break loop if correct
+        break
+    else:
+        print('Wrong')
